@@ -28,7 +28,7 @@ callback(const sensor_msgs::PointCloud2::ConstPtr &msg)
 	passy.setFilterFieldName("y");//적용할 좌표 축 (eg. Z축)
 	passy.setFilterLimits(-20.0, 20.0);//적용할 값 (최소, 최대 값)
 	passx.setFilterFieldName("x");
-	passx.setFilterLimits(0, 50);
+	passx.setFilterLimits(-30, 50);
 
 //	pass.setFilterFieldName("y");//적용할 좌표 축 (eg. Z축)
 //	pass.setFilterLimits(-100.0, 100.0);//적용할 값 (최소, 최대 값)
